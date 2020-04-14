@@ -1,10 +1,8 @@
 package abc.geettime.alg.dimension.one;
 
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
-import java.util.stream.Collectors;
 
 /**
  * @Description 判断两个字符串中字符和个数是否一致

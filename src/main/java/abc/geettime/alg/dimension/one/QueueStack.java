@@ -30,7 +30,7 @@ public class QueueStack {
 
     /** Initialize your data structure here. */
     public QueueStack() {
-        q1 = new LinkedBlockingDeque<>();
+        q1 = new LinkedBlockingDeque();
         q2 = new LinkedBlockingDeque();
     }
 

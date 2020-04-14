@@ -33,7 +33,7 @@ public class ValidStrEqual {
     }
 
     private static Map<Character,Integer> stringToMap(String s){
-        Map<Character,Integer> sm = new HashMap<>();
+        Map<Character,Integer> sm = new HashMap<Character,Integer>();
         for( char c : s.toCharArray()){
             if( sm.get(c) == null ){
                 sm.put(c, 1);

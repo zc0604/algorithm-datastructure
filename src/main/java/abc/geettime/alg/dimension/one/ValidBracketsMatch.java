@@ -28,7 +28,7 @@ public class ValidBracketsMatch {
     }
 
     public static boolean isValid(String s) {
-        Map<Character ,Character> matches = new HashMap<>();
+        Map<Character ,Character> matches = new HashMap<Character ,Character>();
         matches.put('}', '{');
         matches.put(']', '[');
         matches.put(')', '(');

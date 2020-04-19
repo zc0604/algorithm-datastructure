@@ -1,10 +1,6 @@
 package abc.geettime.alg.dimension.one;
 
-import com.sun.jmx.remote.internal.ArrayQueue;
-
 import java.util.*;
-import java.util.stream.Collectors;
-
 /**
  * @Description
  * @auther cong zhang
@@ -29,7 +25,7 @@ public class SlidingWindow {
             return null ;
         }
         int res []= new int [nums.length-k + 1];
-        Deque<Integer> deQueue = new ArrayDeque<>(k);
+        Deque<Integer> deQueue = new ArrayDeque<Integer>(k);
         for( int i = 0 ; i< nums.length ; i++){
             if( i >= k){
                  // 移除已经不再窗口内的那个元素，如果它还是当前最大
@@ -56,7 +52,7 @@ public class SlidingWindow {
             return null ;
         }
          int res []= new int [nums.length-k + 1];
-         PriorityQueue<Integer> priorityQueue = new PriorityQueue<>(k, new Comparator<Integer>() {
+         PriorityQueue<Integer> priorityQueue = new PriorityQueue<Integer>(k, new Comparator<Integer>() {
              @Override
              public int compare(Integer o1, Integer o2) {
                  return o2.intValue() -  o1.intValue() ;

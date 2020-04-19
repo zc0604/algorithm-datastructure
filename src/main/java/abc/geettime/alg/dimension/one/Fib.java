@@ -18,7 +18,7 @@ public class Fib {
         int f0 = 1;
         int f1 = 1;
         int temp = 0 ;
-        for( int i = 2 ; i <= n ; i ++){
+        for( int i = 2 ; i <= n  ; i ++){
             temp = f1;
             f1 = f1 + f0 ;
             f0 = temp ;

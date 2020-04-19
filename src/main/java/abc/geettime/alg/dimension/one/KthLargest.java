@@ -13,7 +13,7 @@ public class KthLargest {
     private PriorityQueue<Integer> priorityQueue ;
     private int k ;
     public KthLargest(int k, int[] nums) {
-        this.priorityQueue = new PriorityQueue<>(k);
+        this.priorityQueue = new PriorityQueue<Integer>(k);
         this.k = k ;
         for( int i = 0 ; i<nums.length ; i++){
             add(nums[i]);
